@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>모기잡기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+
+  <!-- 인트로 -->
+  <div class="wrapper">
+  </div>
+  <div class="welcome-section content-hidden">
+    <div class="content-wrap">
+      <ul class="fly-in-text">
+        <li>게</li>
+        <li>섰</li>
+        <li>거</li>
+        <li>라</li>
+        <li>잡</li>
+        <li>았</li>
+        <li>다</li>
+        <li>요</li>
+        <li>놈</li>
+      </ul>
+      <a href="#" class="enter-button">Enter</a>
+    </div>
+  </div>
+
+
+  <h1>🦟<span class="blue"> 모기잡기</span><span class="red"> 게임</span>🦟</h1>
+    
+
+  <div id="status">
+    <h2>남은 시간 <span id="time-left">10</span></h2>
+    <h2>잡은 모기 수 <span id="score">0</span></h2>
+  </div>
+
+  <button onclick="mozzieMove()">START</button>
+  <!-- <button class="restart" onclick="window.location.reload();">RESTART</button> -->
+  <button class="hard" onclick="mozzieMove_2()">HARD MODE</button>
+  <div class="rule-position">
+    <div class="rule">
+      <div class="rule-pos">
+      <p> ✓ 스타트 버튼을 선택하면 게임이 시작된다.</p>
+      <p> ✓ 주어진 시간 안에 등장하는 모기를 광클릭!</p>
+      <p> ✓ 게임이 끝나면 점수와 시간이 리셋된다.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <h3 class="text" id="text">START 버튼을 누르면 게임이 시작됩니다.</h3>
+    <div class="square" id="1"></div>
+    <div class="square" id="2"></div>
+    <div class="square" id="3"></div>
+    <div class="square" id="4"></div>
+    <div class="square" id="5"></div>
+    <div class="square" id="6"></div>
+    <div class="square" id="7"></div>
+    <div class="square" id="8"></div>
+    <div class="square" id="9"></div>
+    <div class="square" id="10"></div>
+    <div class="square" id="11"></div>
+    <div class="square" id="12"></div>
+    <div class="square" id="13"></div>
+    <div class="square" id="14"></div>
+    <div class="square" id="15"></div>
+    <div class="square" id="16"></div>
+    <div class="square" id="17"></div>
+    <div class="square" id="18"></div>
+    <div class="square" id="19"></div>
+    <div class="square" id="20"></div>
+    <div class="square" id="21"></div>
+    <div class="square" id="22"></div>
+    <div class="square" id="23"></div>
+    <div class="square" id="24"></div>
+    <div class="square" id="25"></div>
+  </div>
+
+  </body>
+  
+  <script defer src="./js/function.js"></script>
+
+</html>

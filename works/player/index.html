@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>멀디미디어 플레이어</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script defer src="./js/function.js"></script>
+</head>
+<body>
+
+	<!-- 참고 사이트 
+	https://www.w3schools.com/tags/ref_av_dom.asp
+	https://www.w3schools.com/tags/tag_video.asp
+	
+	-->
+	<div id="wrap">
+		<h1 class="text-center">멀티미디어 플레이어</h1>
+		<section>
+			<!-- video 태그는 id로 사용하기 -->
+			<video id="myvideo" poster="./images/car.png" controls>
+				<source src="./images/car.mp4" type="video/mp4">
+			</video>
+
+			<div class="controlgroup">
+				<button class="play">처음부터 재생</button>
+				<button class="pause">일시정지</button>
+				<button class="resume">정지부터 재생</button>
+			</div>
+		</section>
+		<address class="text-center">Designed by 노가영</address>
+	</div>
+
+	<script>
+		
+	</script>
+</body>
+</html>

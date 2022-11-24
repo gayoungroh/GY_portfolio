@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+  overflow:hidden;
+  text-align: center;
+  background-color: rgb(247, 255, 255);
+}
+
+/* 인트로 부분 */
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: lighter;
+  font-size: 40px;
+  z-index: 1000;
+}
+.welcome-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: #000;
+  overflow: hidden;
+  z-index: 1000;
+}
+.content-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.fly-in-text{
+  list-style: none;
+}
+.fly-in-text li{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 5em;
+  color: #fff;
+  opacity: 1;
+  transition: all 3s ease;
+}
+.fly-in-text li:nth-child(9){
+  margin-right: 0;
+}
+.enter-button{
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
+  text-decoration: none;
+  color: #adff2f !important;
+  opacity: 1;
+  transition: all 1s ease 3s;
+}
+.content-hidden .fly-in-text li, .content-hidden .enter-button{opacity: 0;}
+.content-hidden .fly-in-text li:nth-child(1) { transform: translate3d(-120px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(2) { transform: translate3d(-90px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(3) { transform: translate3d(-60px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(4) { transform: translate3d(-30px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(5) { transform: translate3d(0, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(6) { transform: translate3d(30px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(7) { transform: translate3d(60px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(8) { transform: translate3d(90px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(9) { transform: translate3d(120px, 0, 0); }
+.content-hidden .enter-button{ transform: translate3d(0, -30px, 0); }
+
+/* 모기잡기 css */
+h1 {
+  margin: 40px;
+  font-size: 36px;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid #000; */
+}
+
+button {
+  margin-left: -314px;
+  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #223999;
+}
+
+#status {
+  width: 616px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+#status h2{
+  border: 1px solid rgb(0, 0, 0);
+  width: 300px;
+  padding: 10px 0;
+  font-weight: 900;
+  color: rgb(29, 29, 29);
+  background-color: #fff;
+  line-height: 25px;
+}
+
+.red {
+  color: #c92828;
+}
+.blue {
+  color: #223999;
+}
+
+.grid {
+  background: url("./../images/01.jpg");
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 616px;
+  height: 616px;
+  margin: 10px auto;
+  position: relative;
+  margin-top: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.grid>h3{
+    position: absolute;
+    background-color: rgba(26, 26, 26, 0.5);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.hard{
+  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: -6px;
+}
+
+.hard:hover{
+  color: #c92828;
+}
+
+@keyframes moz {
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+
+.mozzie{
+  background-image: url("./../images/02.png");
+  background-size: cover;
+  cursor: url('./../images/cursor.cur'), auto;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  animation: moz .1s infinite;
+}
+
+.rule{
+  width: 321px;
+  height: 67px;
+  top: 100px;
+  margin: 0 50.3333%;
+  margin-top: -71px;
+}
+
+.rule>.rule-pos{
+  width: 302px;
+  height: 71px;
+  border: 2px solid rgb(10, 10, 10);
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #223999;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rule>.rule-pos>p{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.rule>.rule-pos>p:nth-child(1){
+  padding-top: 10px;
+}
