@@ -179,8 +179,8 @@
 @media screen and (max-width:640px) {
   #home > .intro {
     top: 60%;
-    left: 20%;
-    margin-left: -30px;
+    left: 50%;
+    margin-left: -200px;
     padding-bottom: 30px;
   }
 }
@@ -196,6 +196,7 @@
   #home > .intro > h2 {
     font-size: 45px;
     text-align: center;
+    left: 1%;
     padding-bottom: 30px;
     text-shadow: initial;
     color: #333;
@@ -335,7 +336,7 @@
 }
 @media screen and (max-width:640px) {
   #profile .container .profile > h3.myphoto {
-    width: 70%;
+    width: 80%;
   }
 }
 #profile .container .profile > h3.myphoto > img {
@@ -651,6 +652,7 @@
 @media screen and (max-width:640px) {
   #portfolio > .slides > .slides-container {
     height: 600px;
+    margin-bottom: 30px;
   }
 }
 #portfolio > .slides > .slides-container > figure {

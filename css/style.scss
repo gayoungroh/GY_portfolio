@@ -239,8 +239,8 @@ $mobile : "screen and (max-width:640px)";
 
     @media #{$mobile}{
       top: 60%;
-      left: 20%;
-      margin-left: -30px;
+      left: 50%;
+      margin-left: -200px;
       padding-bottom: 30px;
     }
 
@@ -256,6 +256,7 @@ $mobile : "screen and (max-width:640px)";
       @media #{$mobile}{
         font-size: 45px;
         text-align: center;
+        left: 1%;
         padding-bottom: 30px;
         text-shadow: initial;
         color:#333;
@@ -383,7 +384,7 @@ $mobile : "screen and (max-width:640px)";
         box-shadow: 4px 4px 25px 0 rgba(0,0,0,0.5);
 
         @media #{$mobile}{
-          width: 70%;
+          width: 80%;
         }
         >img{
           width: 100%;
@@ -725,6 +726,7 @@ $mobile : "screen and (max-width:640px)";
 
       @media #{$mobile}{
         height: 600px;
+        margin-bottom: 30px;
       }
         
       >figure{
