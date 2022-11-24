@@ -176,6 +176,7 @@ $mobile : "screen and (max-width:640px)";
                 height: 30px;
                 padding: 0;
                 line-height: 30px;
+                font-size: 1rem;
                 color: #222;
               }
             }//end of a
@@ -726,7 +727,7 @@ $mobile : "screen and (max-width:640px)";
 
       @media #{$mobile}{
         height: 600px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
         
       >figure{
