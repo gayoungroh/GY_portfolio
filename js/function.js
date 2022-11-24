@@ -12,22 +12,6 @@ $(function() {
 	});		
 });
 
-// //로딩중
-// const loading = document.querySelector('.loading');
-// const html = document.querySelector('html');
-
-// html.style.overflow = 'hidder';
-
-// window.addEventListener('load', ()=>{
-//   setTimeout(()=>{
-//     loading.style.opacity = '0';
-//     html.style.overflow = 'auto';
-
-//     setTimeout(()=>{
-//       loading.style.display = 'none';
-//     },500);
-//   },2000);
-// })
 
   const $header = document.querySelector('header');
   const $profile = document.getElementById('profile');
@@ -96,26 +80,7 @@ window.addEventListener('scroll',function(){
 });
 
 
-  // window.addEventListener('scroll', function(){
-  
-  //   const scrollTop = Math.ceil(window.scrollY);
 
-  //   console.log(`scrollTop = ${scrollTop}`);
-
-  //   for(let i =0;i<$mnus.length;i++){
-  //     if(scrollTop >= arrTopVal[i]-166){
-  //       oldIdx = nowIdx;
-  //       nowIdx = i;
-
-  //       $mnus[oldIdx].parentElement.classList.remove('on');
-  //       $mnus[nowIdx].parentElement.classList.add('on');
-
-  //     }else if(scrollTop < arrTopVal[0]-166){
-  //       $mnus[nowIdx].parentElement.classList.remove('on');
-  //     }
-  //   }
-
-  // });
 
 $top.addEventListener('click',function(evt){
   evt.preventDefault();

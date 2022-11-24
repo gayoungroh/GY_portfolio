@@ -631,6 +631,7 @@
 }
 @media screen and (max-width:640px) {
   #portfolio > .slides > .slides-pagination > li > a {
+    width: initial;
     height: 10px;
     text-indent: -9999px;
     border-radius: 50px;

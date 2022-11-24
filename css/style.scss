@@ -701,6 +701,7 @@ $mobile : "screen and (max-width:640px)";
           border-radius: 20px;
 
           @media #{$mobile}{
+            width: initial;
             height: 10px;
             text-indent: -9999px;
             border-radius: 50px;
