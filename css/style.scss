@@ -505,7 +505,7 @@ $mobile : "screen and (max-width:640px)";
   background-color: rgba(174, 148, 248, 0.8);
 
   @media #{$mobile}{
-    height: 600px;
+    height: 700px;
   }
 
   >h2{
