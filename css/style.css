@@ -443,6 +443,7 @@
 }
 
 #skill {
+  height: 400px;
   background-color: rgba(174, 148, 248, 0.8);
 }
 @media screen and (max-width:640px) {
@@ -504,10 +505,10 @@
 }
 @media screen and (max-width:640px) {
   #skill > .ability-container > .item-box > li {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     padding-bottom: 30px;
-    background-size: 140px;
+    background-size: 130px;
   }
 }
 

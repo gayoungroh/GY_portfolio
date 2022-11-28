@@ -502,6 +502,7 @@ $mobile : "screen and (max-width:640px)";
 
 #skill{
   // margin-top: 70px;
+  height: 400px;
   background-color: rgba(174, 148, 248, 0.8);
 
   @media #{$mobile}{
@@ -549,10 +550,10 @@ $mobile : "screen and (max-width:640px)";
 
 
         @media #{$mobile}{
-          width: 140px;
-          height: 140px;
+          width: 130px;
+          height: 130px;
           padding-bottom: 30px;
-          background-size: 140px;
+          background-size: 130px;
         }
       }//en of li
     }//end of .item-box
