@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -444,123 +443,72 @@
 }
 
 #skill {
-  background-color: #222;
+  background-color: rgba(174, 148, 248, 0.8);
+}
+@media screen and (max-width:640px) {
+  #skill {
+    height: 600px;
+  }
 }
 #skill > h2 {
   height: 120px;
   line-height: 120px;
   margin: 0 auto;
-  color: #fff;
+  color: #222;
   font-size: 33px;
   text-align: center;
-  text-shadow: 1px 2px 8px rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
 }
 #skill > .ability-container {
   padding: 50px 0;
+  margin: 0 auto;
 }
-#skill > .ability-container > .stick {
+#skill > .ability-container > .item-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
 }
 @media screen and (max-width:640px) {
-  #skill > .ability-container > .stick {
-    display: block;
-  }
-}
-#skill > .ability-container > .stick > .stick-container {
-  width: 43%;
-}
-@media screen and (max-width:640px) {
-  #skill > .ability-container > .stick > .stick-container {
+  #skill > .ability-container > .item-box {
     width: 100%;
-  }
-}
-#skill > .ability-container > .stick > .stick-container > .item {
-  margin-bottom: 40px;
-  display: flex;
-}
-@media screen and (max-width:640px) {
-  #skill > .ability-container > .stick > .stick-container > .item {
-    padding: 0 7%;
-  }
-}
-#skill > .ability-container > .stick > .stick-container > .item > h3 {
-  width: 17%;
-  height: 10px;
-  padding-right: 10%;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 10px;
-  text-align: right;
-}
-@media screen and (max-width:640px) {
-  #skill > .ability-container > .stick > .stick-container > .item > h3 {
-    font-size: 15px;
-  }
-}
-#skill > .ability-container > .stick > .stick-container > .item .progress {
-  position: relative;
-  width: 75%;
-  height: 10px;
-  background-color: #3a4149;
-  border-radius: 3px;
-}
-#skill > .ability-container > .stick > .stick-container > .item .progress .bar {
-  height: 100%;
-  /* width: 100px; js에서 동적으로 할당 */
-  width: 0;
-  background-color: coral;
-  transition: all 2s ease-in-out;
-}
-#skill > .ability-container > .stick > .stick-container > .item .progress .bar > span {
-  position: absolute;
-  top: -20px;
-  right: 15px;
-  color: #fff;
-}
-#skill > .ability-container > .piechart {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-@media screen and (max-width:640px) {
-  #skill > .ability-container > .piechart {
     flex-flow: wrap;
-    margin-top: 70px;
-    padding: 0 7%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }
-#skill > .ability-container > .piechart > .item {
-  width: 140px;
-  height: 200px;
+#skill > .ability-container > .item-box > li {
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
 }
-#skill > .ability-container > .piechart > .item > .chart {
-  position: relative;
-  width: 140px;
-  height: 140px;
-  text-align: center;
+#skill > .ability-container > .item-box > li:nth-child(1) {
+  background-image: url(./../images/skill/skill_html.png);
 }
-#skill > .ability-container > .piechart > .item > .chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+#skill > .ability-container > .item-box > li:nth-child(2) {
+  background-image: url(./../images/skill/skill_css.png);
 }
-#skill > .ability-container > .piechart > .item > .chart > .percent {
-  color: #fff;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 140px;
+#skill > .ability-container > .item-box > li:nth-child(3) {
+  background-image: url(./../images/skill/skill_sass.png);
 }
-#skill > .ability-container > .piechart > .item > .chart > .percent:after {
-  content: "%";
+#skill > .ability-container > .item-box > li:nth-child(4) {
+  background-image: url(./../images/skill/skill_js.png);
 }
-#skill > .ability-container > .piechart > .item > .chart > .tit {
-  height: 60px;
-  color: #ffc90e;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 60px;
+#skill > .ability-container > .item-box > li:nth-child(5) {
+  background-image: url(./../images/skill/skill_ps.png);
+}
+#skill > .ability-container > .item-box > li:nth-child(6) {
+  background-image: url(./../images/skill/skill_ai.png);
+}
+@media screen and (max-width:640px) {
+  #skill > .ability-container > .item-box > li {
+    width: 140px;
+    height: 140px;
+    padding-bottom: 30px;
+    background-size: 140px;
+  }
 }
 
 #portfolio > h2 {

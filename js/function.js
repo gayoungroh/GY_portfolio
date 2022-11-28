@@ -80,71 +80,11 @@ window.addEventListener('scroll',function(){
 });
 
 
-
-
 $top.addEventListener('click',function(evt){
   evt.preventDefault();
   window.scrollTo({top:0, behavior:'smooth'});
 });
 
-
-// #skill 
-$(function(){
-  $("#skill").on("inview", function(evt, visible){
-    if(visible==true){
-      console.log("inview 이벤트 작동완료");
-/*			
-      $("#ability .bar").each(function(){
-        $(this).css({
-        //	"width" : $(this).children("span").text()
-        
-          "width" : $(this).parent().attr("data-bar")+"%"
-        });
-      });
-*/		
-
-      for(var i=0;i<=5;i++){
-        var $that = $("#skill .bar").eq(i);
-        $that.css({
-          "width" : $that.parent().attr("data-bar")+"%"
-        });
-      }
-    }
-  });
-  
-  $(window).on("scroll", function(){
-    const scrollTop = $(this).scrollTop();
-  
-    if(scrollTop < $("#skill").offset().top-$(this).height()){
-    
-    $("#skill .bar").width(0);
-  }
-   
-  });
-  
-  $(".piechart").on("inview", function(evt, visible){
-    
-    if(visible==true){
-      
-      $('.chart').easyPieChart({
-        //your configuration goes here
-        easing: 'easeInOutCubic',
-        delay: 3000,
-        barColor:'#8251cc',
-        trackColor:'rgba(255,255,255,0.2)',
-        scaleColor: false,
-        lineWidth: 8,
-        size: 140,
-        animate: 2500,
-        onStep: function(from, to, percent) {
-          this.el.children[0].innerHTML = Math.round(percent);
-        }
-      });
-      
-    }
-  });
-  
-});
 
 //portfolio
 $(function(){

@@ -502,135 +502,60 @@ $mobile : "screen and (max-width:640px)";
 
 #skill{
   // margin-top: 70px;
-  background-color: #222;
+  background-color: rgba(174, 148, 248, 0.8);
+
+  @media #{$mobile}{
+    height: 600px;
+  }
 
   >h2{
     height: 120px;
     line-height: 120px;
     margin: 0 auto;
-    color: #fff;
+    color: #222;
     font-size: 33px;
     text-align: center;
-    text-shadow: 1px 2px 8px rgb(255,255,255, 0.4);
+    text-shadow: 1px 2px 8px rgb(0,0,0, 0.4);
   }
 
   >.ability-container{
     padding: 50px 0;
-	
-    >.stick{
+    margin: 0 auto;
+
+    >.item-box{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 800px;
+      margin: 0 auto;
 
       @media #{$mobile}{
-        display: block;
+        width: 100%;
+        flex-flow:wrap;
+        padding: 0 20px;
+        box-sizing: border-box;
       }
+      >li{
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        &:nth-child(1){background-image: url(./../images/skill/skill_html.png);}
+        &:nth-child(2){background-image: url(./../images/skill/skill_css.png);}
+        &:nth-child(3){background-image: url(./../images/skill/skill_sass.png);}
+        &:nth-child(4){background-image: url(./../images/skill/skill_js.png);}
+        &:nth-child(5){background-image: url(./../images/skill/skill_ps.png);}
+        &:nth-child(6){background-image: url(./../images/skill/skill_ai.png);}
 
-      >.stick-container{
-        width: 43%;
 
         @media #{$mobile}{
-          width: 100%;
-        } 
-
-        >.item{
-          margin-bottom: 40px;
-          display: flex;
-
-          @media #{$mobile}{
-            padding: 0 7%;
-          }
-
-          >h3{
-            width: 17%;
-            height: 10px;
-            padding-right: 10%;
-            color: #fff;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 10px;
-            text-align: right;
-
-            @media #{$mobile}{
-              font-size:15px;
-            }
-          }
-
-          .progress{
-            position: relative;
-            width: 75%;
-            height: 10px;
-            background-color: #3a4149;
-            border-radius: 3px;
-
-            .bar{
-              height: 100%;
-              /* width: 100px; js에서 동적으로 할당 */
-              width: 0;
-              background-color: coral;
-              // background-color: #8251cc;
-              transition: all 2s ease-in-out;
-
-              >span{
-                position: absolute;
-                top: -20px;
-                right: 15px;
-                color: #fff;
-              }
-            }//end of .bar
-          }//end of .progress
-        }//end of .item
-        
-      }//end of .stick-container
-    }//end of .stick
-
-    >.piechart{
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px;
-
-      @media #{$mobile}{
-        flex-flow:wrap;
-        margin-top:70px;
-        padding: 0 7%;
-      }
-
-      >.item{
-        width: 140px;
-        height: 200px;
-
-        >.chart{
-          position: relative;
           width: 140px;
           height: 140px;
-          text-align: center;
-
-          canvas{
-            position: absolute;
-            left: 0;
-            top: 0;
-          }
-
-          >.percent{
-            color: #fff;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 140px;
-
-            &:after {
-              content: '%';
-            }
-          }//end of .percent
-
-          >.tit{
-            height: 60px;
-            color: #ffc90e;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 60px;
-          }
-        }//end of .chart
-      }//end of .item
-    }//end of piechart
+          padding-bottom: 30px;
+          background-size: 140px;
+        }
+      }//en of li
+    }//end of .item-box
   }//end of .container
 
 }//end of #skill
